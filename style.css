@@ -1,0 +1,29 @@
+body {
+    padding: none;
+    margin: none;
+}
+
+  /* Set up the container as a grid */
+  #grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width: 50vw;
+    height: 50vh;
+    box-sizing: border-box;
+    margin: auto;
+    top: 10vh;
+  }
+
+  /* Style individual cells */
+  .cell {
+    background-color: white;
+    aspect-ratio: 1;
+    border: 1px solid #999;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+  /* Style for black cells */
+  .cell.black {
+    background-color: black;
+  }
