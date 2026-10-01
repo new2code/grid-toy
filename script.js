@@ -22,6 +22,9 @@ const grid = document.getElementById('grid');
     const cell = document.createElement('div');
     cell.className = 'cell';
 
+if (Math.random() < INVERT_PROBABILITY) {
+   cell.classes.add("black");
+}
 
      
     // Handle both click and drag events
